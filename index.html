@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Demo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">WebDevPro</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Master HTML & CSS by building beautiful, responsive web experiences.</p>
+            <a href="#signup" class="cta-button">Get Started Now</a>
+        </div>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <h1>Hadhiya mansoor J</h1>
-    <p class="tagline">Web Developer | Designer | Problem Solver</p>
-  </header>
+    <main>
+        <section id="features" class="container">
+            <h2>Key Features</h2>
+            <p>Structure, Style, and Seamless Separation.</p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Semantic HTML</h3>
+                    <p>Learn to structure your content correctly for accessibility and SEO.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Modern CSS</h3>
+                    <p>Explore Flexbox, Grid, and responsive design techniques.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Project-Based</h3>
+                    <p>Build real-world projects to solidify your coding skills.</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>About Me</h2>
-    <img src="pic.jpg" />
-    <p>Hello! I'm Hadhiya mansoor,passionate developer with experience in building dynamic and responsive websites and applications. I specialize in front-end technologies like HTML, CSS, and JavaScript, and I enjoy solving problems and creating intuitive user experiences.</p>
-  </section>
+        <hr>
 
-  <!-- Skills Section -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>React.js, Vue.js</li>
-      <li>Responsive Web Design</li>
-      <li>Git & GitHub</li>
-      <li>Node.js, Express</li>
-      <li>Figma, Adobe XD</li>
-    </ul>
-  </section>
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <p>Tailored paths to elevate your web development expertise.</p>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Starter Course</h3>
+                    <p>Fundamentals of HTML structure and basic CSS styling.</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+                <div class="card">
+                    <h3>Responsive Design Mastery</h3>
+                    <p>Deep dive into modern layout techniques like Flex and Grid.</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+                <div class="card">
+                    <h3>Portfolio Review</h3>
+                    <p>Personalized feedback on your projects and code quality.</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- Projects Section -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Attandance management</h3>
-      <img src="project1.jpg" />
-      <p>A Java-based application to manage student attendance with admin and student login modules.</p>
-    </div>
-    <div class="project-card">
-      <h3>Career Compass</h3>
-      <img src="project2.jpg" />
-      <p>A web-based application that suggests career paths for students based on their interests, certifications, and achievements using machine learning</p>
-    </div>
-  </section>
+        <hr>
 
-  <!-- Resume Section -->
-  <section class="resume">
-    <h2>Resume</h2>
-    <p>Download my resume to learn more about my professional background and experience.</p>
-    <a href="resume.pdf" download class="button">Download Resume (PDF)</a>
-  </section>
+        <section id="signup" class="container cta-section">
+            <h2>Ready to Start Coding?</h2>
+            <p>Join over 10,000 aspiring developers today!</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="cta-button">Sign Up for Free</button>
+            </form>
+        </section>
+    </main>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: hadhiyamansoor12@example.com</p>
-    <p>Phone: 9876543210</p>
-    </section>
-  <!-- Demo Button -->
-  <section class="demo-button">
-    <a href="https://yourdemo.com" target="_blank" class="button">FOR DEMO CLICK HERE</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <small>&copy; 2025 Hadhiya mansoor. All rights reserved.</small>
-    
-  </footer>
-
+    <footer>
+        <p>&copy; 2025 Web Dev Practice. All rights reserved.</p>
+    </footer>
 </body>
 </html>
