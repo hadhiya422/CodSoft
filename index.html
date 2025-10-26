@@ -3,84 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Demo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero-section">
-        <nav class="navbar">
-            <div class="logo">WebDevPro</div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#signup">Sign Up</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Welcome to Our Landing Page</h1>
-            <p>Master HTML & CSS by building beautiful, responsive web experiences.</p>
-            <a href="#signup" class="cta-button">Get Started Now</a>
+    <div class="calculator">
+        <input type="text" id="display" class="calculator-display" disabled>
+        <div class="calculator-buttons">
+            <button class="btn clear">C</button>
+            <button class="btn operator" data-operator="/">/</button>
+            <button class="btn operator" data-operator="*">*</button>
+            <button class="btn operator" data-operator="-">-</button>
+
+            <button class="btn number" data-number="7">7</button>
+            <button class="btn number" data-number="8">8</button>
+            <button class="btn number" data-number="9">9</button>
+            <button class="btn operator" data-operator="+">+</button>
+
+            <button class="btn number" data-number="4">4</button>
+            <button class="btn number" data-number="5">5</button>
+            <button class="btn number" data-number="6">6</button>
+
+            <button class="btn number" data-number="1">1</button>
+            <button class="btn number" data-number="2">2</button>
+            <button class="btn number" data-number="3">3</button>
+            <button class="btn equals">=</button>
+
+            <button class="btn number zero" data-number="0">0</button>
+            <button class="btn number decimal" data-number=".">.</button>
         </div>
-    </header>
-
-    <main>
-        <section id="features" class="container">
-            <h2>Key Features</h2>
-            <p>Structure, Style, and Seamless Separation.</p>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <h3>Semantic HTML</h3>
-                    <p>Learn to structure your content correctly for accessibility and SEO.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Modern CSS</h3>
-                    <p>Explore Flexbox, Grid, and responsive design techniques.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Project-Based</h3>
-                    <p>Build real-world projects to solidify your coding skills.</p>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="services" class="container">
-            <h2>Our Services</h2>
-            <p>Tailored paths to elevate your web development expertise.</p>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Starter Course</h3>
-                    <p>Fundamentals of HTML structure and basic CSS styling.</p>
-                    <a href="#" class="service-link">View Details</a>
-                </div>
-                <div class="card">
-                    <h3>Responsive Design Mastery</h3>
-                    <p>Deep dive into modern layout techniques like Flex and Grid.</p>
-                    <a href="#" class="service-link">View Details</a>
-                </div>
-                <div class="card">
-                    <h3>Portfolio Review</h3>
-                    <p>Personalized feedback on your projects and code quality.</p>
-                    <a href="#" class="service-link">View Details</a>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="signup" class="container cta-section">
-            <h2>Ready to Start Coding?</h2>
-            <p>Join over 10,000 aspiring developers today!</p>
-            <form class="signup-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="cta-button">Sign Up for Free</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Web Dev Practice. All rights reserved.</p>
-    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
